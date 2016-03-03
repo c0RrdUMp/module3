@@ -1,4 +1,38 @@
 /********** Base styles **********/
 body{
-  background-color: #FF8833;
+  background-color: #00FFAA;
+}
+
+section {
+  background-color: #5555EE;
+  border: solid black 1px;
+  height: 1000px;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #FF99CC;
+  border-radius: 0;
+  border: solid black 1px;
+}
+
+
+.navbar-brand {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #333333;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
 }
