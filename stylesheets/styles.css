@@ -1,38 +1,113 @@
-/********** Base styles **********/
+/*
+body {
+  font-size: 16px;
+  color: #55dd22;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+*/
+
 body{
   background-color: #00FFAA;
 }
-
-section {
-  background-color: #5555EE;
-  border: solid black 1px;
-  height: 1000px;
-}
-
 /** HEADER **/
 #header-nav {
-  background-color: #FF99CC;
+  /*background-color: #f6b319;*/
+  background-color: #aaaa55;
   border-radius: 0;
-  border: solid black 1px;
+  border: 0;
 }
 
-
-.navbar-brand {
-  padding-top: 15px;
-  padding-bottom: 10px;
-}
 
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
-  color: #333333;
+  color: #557c3e;
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
+  margin-top: 5px;
   margin-bottom: 0;
+  padding-bottom: 5px;
   line-height: .75;
 }
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
+
+#nav-list {
+  margin-top: 10px;
+  text-align: center;
+}
+#nav-list a {
+  color: #951C49;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+#divnav{
+  border: solid black 1px;
+  margin-bottom: 1px;
+}
+/* END HEADER */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+  
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+}
+
+
+section {
+  background-color: #CCDDEE;
+  border: solid black 1px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+.container-fluid {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+h4{
+  text-align: center;
 }
